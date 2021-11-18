@@ -11,6 +11,7 @@ inbox.user(user)
 inbox.pass_(pw)
 
 messages = [inbox.retr(i) for i in range(1, len(inbox.list()[1]) + 1)]
+
 # decode messages
 messages = ['\n'.join(map(bytes.decode, msg[1])) for msg in messages]
 
