@@ -6,6 +6,6 @@ def math(*args):
     return sum(args)
 
 def main(number):
-    print(f"The square root of {number} if {math.sqrt(number)}")
+    print(f"The square root of {number} is {math.sqrt(number)}")
 
 main(8)
